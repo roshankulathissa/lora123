@@ -135,10 +135,17 @@ export default function Jobs() {
   return (
     <div className="pt-20">
       <section
-        className="py-20 text-white text-center"
-        style={{ background: "var(--gradient-hero)" }}
+        className="relative py-24 text-white text-center overflow-hidden"
       >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/jobs-hero.png')" }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{ background: "oklch(15% 0.04 240 / 0.75)" }}
+        />
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">
             Overseas Job Openings
           </h1>
