@@ -44,6 +44,7 @@ export default function Footer() {
                 { href: "/", label: "Home" },
                 { href: "/jobs", label: "Job Listings" },
                 { href: "/about", label: "About Us" },
+                { href: "/resources", label: "Resources" },
                 { href: "/contact", label: "Contact" },
                 { href: "/apply", label: "Apply Now" },
               ].map(({ href, label }) => (

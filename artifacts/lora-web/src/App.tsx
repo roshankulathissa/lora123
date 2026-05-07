@@ -6,6 +6,7 @@ import Jobs from "./pages/Jobs";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Apply from "./pages/Apply";
+import Resources from "./pages/Resources";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/apply" component={Apply} />
+          <Route path="/resources" component={Resources} />
         </Switch>
       </main>
       <Footer />
