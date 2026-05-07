@@ -36,7 +36,7 @@ export default function Header() {
       style={{
         background: scrolled
           ? "oklch(100% 0 0 / 0.80)"
-          : "oklch(18% 0.08 240 / 0.30)",
+          : "linear-gradient(135deg, oklch(18% 0.05 240 / 0.92) 0%, oklch(28% 0.08 240 / 0.92) 50%, oklch(22% 0.06 250 / 0.92) 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
