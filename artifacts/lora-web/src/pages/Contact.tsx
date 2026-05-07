@@ -162,7 +162,7 @@ export default function Contact() {
               <h2 className="text-2xl font-bold text-gray-900 mb-8">Find Our Office</h2>
               <div className="rounded-2xl overflow-hidden shadow-card border border-gray-100 h-80">
                 <iframe
-                  src="https://maps.google.com/maps?q=7.5468,80.1921&z=18&output=embed"
+                  src="https://maps.google.com/maps?q=7.606485,80.083265&z=16&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
