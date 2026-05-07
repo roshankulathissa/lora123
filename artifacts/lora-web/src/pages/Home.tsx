@@ -56,11 +56,9 @@ export default function Home() {
         />
         <div
           className="absolute inset-0"
-          style={{ background: "oklch(18% 0.08 240 / 0.72)" }}
-        />
-        <div
-          className="absolute inset-0"
-          style={{ background: "radial-gradient(ellipse 70% 60% at 0% 0%, oklch(65% 0.18 55 / 0.28) 0%, transparent 65%)" }}
+          style={{
+            background: "linear-gradient(135deg, oklch(55% 0.18 60 / 0.70) 0%, oklch(18% 0.08 240 / 0.82) 55%, oklch(15% 0.06 240 / 0.88) 100%)"
+          }}
         />
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-32">
