@@ -173,9 +173,10 @@ export default function Contact() {
                 href="https://maps.app.goo.gl/PSjTNrvak1tTqg9h8"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-gold hover:underline"
+                className="mt-4 inline-flex items-center gap-2 px-6 py-3 rounded-full text-white font-semibold text-sm transition-opacity hover:opacity-90"
+                style={{ background: "var(--gradient-accent)" }}
               >
-                <MapPin size={14} />
+                <MapPin size={16} />
                 Open in Google Maps
               </a>
             </Reveal>
