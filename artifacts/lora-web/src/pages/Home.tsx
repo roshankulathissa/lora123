@@ -1,32 +1,36 @@
 import { Link } from "wouter";
-import { ArrowRight, Globe, Shield, Users, Award, Briefcase, CheckCircle } from "lucide-react";
+import { ArrowRight, Globe, Shield, Users, Award, Briefcase, CheckCircle, Link2, MapPin as MapPinIcon, ClipboardList, Heart } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
 
 const pillars = [
   {
-    icon: Shield,
-    title: "Legitimacy & Trust",
+    letter: "L",
+    icon: Link2,
+    title: "Linking",
     description:
-      "Licensed by the Sri Lanka Bureau of Foreign Employment, we operate with full legal compliance and transparency.",
+      "We aren't just a middleman; we are the vital connection between a dream and a reality.",
   },
   {
+    letter: "O",
     icon: Globe,
-    title: "Global Reach",
+    title: "Overseas",
     description:
-      "Strong partnerships with employers across Qatar, UAE, Saudi Arabia, Kuwait, Malaysia, and beyond.",
+      "Our reach is borderless, opening doors in the world's most thriving economies.",
   },
   {
-    icon: Users,
-    title: "Candidate-First",
+    letter: "R",
+    icon: ClipboardList,
+    title: "Recruitment",
     description:
-      "We prioritize your career growth and safety, providing guidance throughout the entire placement process.",
+      "A rigorous, fair, and professional process ensuring the right fit for candidate and company.",
   },
   {
-    icon: Award,
-    title: "Proven Track Record",
+    letter: "A",
+    icon: Heart,
+    title: "Aspirance",
     description:
-      "Over a decade of successful placements across diverse industries and skill levels.",
+      "The burning desire for progress that we vow to protect and nurture.",
   },
 ];
 
@@ -162,29 +166,41 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24" style={{ background: "oklch(97% 0.01 240)" }}>
+      <section className="py-24" style={{ background: "#eef2f7" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Reveal className="text-center mb-16">
+          <Reveal className="text-center mb-14">
+            <p className="text-xs font-bold uppercase tracking-widest text-amber-500 mb-3">
+              The LORA Philosophy
+            </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              Four Pillars of Excellence
+              Our Four Pillars
             </h2>
-            <p className="text-gray-500 max-w-xl mx-auto">
-              Everything we do is built on these core principles.
+            <p className="text-gray-500 max-w-lg mx-auto text-sm leading-relaxed">
+              Our identity is built on a foundation of four core values that ensure every placement
+              is ethical, efficient, and life-changing.
             </p>
           </Reveal>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {pillars.map((pillar, i) => (
               <Reveal key={pillar.title} delay={i * 100}>
-                <div className="bg-white p-6 rounded-2xl shadow-card border border-gray-100 h-full text-center group hover:-translate-y-1 transition-transform duration-300">
+                <div className="relative bg-white rounded-2xl p-6 shadow-sm border border-gray-100 h-full overflow-hidden hover:-translate-y-1 transition-transform duration-300">
                   <div
-                    className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300"
-                    style={{ background: "var(--gradient-hero)" }}
+                    className="absolute top-2 right-3 text-8xl font-black select-none pointer-events-none"
+                    style={{ color: "oklch(75% 0.18 75 / 0.12)", lineHeight: 1 }}
                   >
-                    <pillar.icon size={24} className="text-white" />
+                    {pillar.letter}
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-2">{pillar.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{pillar.description}</p>
+                  <div className="relative z-10">
+                    <div
+                      className="w-11 h-11 rounded-xl flex items-center justify-center mb-5"
+                      style={{ background: "oklch(30% 0.09 240)" }}
+                    >
+                      <pillar.icon size={20} className="text-white" />
+                    </div>
+                    <h3 className="font-bold text-gray-900 mb-2 text-base">{pillar.title}</h3>
+                    <p className="text-gray-500 text-sm leading-relaxed">{pillar.description}</p>
+                  </div>
                 </div>
               </Reveal>
             ))}
