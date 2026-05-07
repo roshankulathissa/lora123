@@ -262,6 +262,67 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-24" style={{ background: "#eef2f7" }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <Reveal direction="left">
+              <div className="relative rounded-3xl overflow-hidden shadow-elegant">
+                <img
+                  src="/air-ticketing.jpeg"
+                  alt="LORA Air Ticketing Service"
+                  className="w-full h-80 object-cover object-center"
+                />
+                <div
+                  className="absolute inset-0"
+                  style={{ background: "linear-gradient(to top, oklch(18% 0.05 240 / 0.4) 0%, transparent 60%)" }}
+                />
+                <div className="absolute bottom-5 left-5">
+                  <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold text-white" style={{ background: "var(--gradient-accent)" }}>
+                    ✈ Certified Air Ticketing
+                  </span>
+                </div>
+              </div>
+            </Reveal>
+
+            <Reveal direction="right" delay={150}>
+              <div>
+                <p className="text-xs font-bold uppercase tracking-widest text-amber-500 mb-3">
+                  Additional Services
+                </p>
+                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">
+                  Air Ticketing — <br className="hidden sm:block" />
+                  <span className="text-gold">We've Got You Covered</span>
+                </h2>
+                <p className="text-gray-500 leading-relaxed mb-6">
+                  Beyond recruitment, LORA offers a full air ticketing service to make your
+                  departure as smooth as possible. Our qualified team has the expertise to
+                  secure the best international flights for our candidates and their families.
+                </p>
+                <ul className="space-y-3 mb-8">
+                  {[
+                    "International flight bookings at competitive fares",
+                    "Qualified & certified ticketing professionals",
+                    "Assistance with travel documentation",
+                    "Flexible scheduling around your departure dates",
+                  ].map((point) => (
+                    <li key={point} className="flex items-start gap-3 text-gray-700 text-sm">
+                      <CheckCircle size={17} className="flex-shrink-0 text-gold mt-0.5" />
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+                <Link href="/contact">
+                  <Button variant="hero" gradientStyle="accent" className="rounded-full px-7">
+                    Enquire About Air Tickets
+                    <ArrowRight size={16} />
+                  </Button>
+                </Link>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       <section
         className="py-24 text-center text-white"
         style={{ background: "var(--gradient-accent)" }}
