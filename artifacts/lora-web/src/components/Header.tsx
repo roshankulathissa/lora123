@@ -28,14 +28,14 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md ${
         scrolled
-          ? "backdrop-blur-md border-b border-white/10"
-          : "backdrop-blur-sm"
+          ? "border-b border-gray-200/60 shadow-sm"
+          : "border-b border-white/10"
       }`}
       style={{
         background: scrolled
-          ? "oklch(18% 0.08 240 / 0.65)"
+          ? "oklch(100% 0 0 / 0.80)"
           : "oklch(18% 0.08 240 / 0.30)",
       }}
     >
@@ -47,7 +47,7 @@ export default function Header() {
               alt="LORA Foreign Employment"
               className="h-10 w-auto object-contain"
             />
-            <div className="text-xs leading-tight text-white/70 hidden sm:block">
+            <div className={`text-xs leading-tight hidden sm:block transition-colors duration-300 ${scrolled ? "text-gray-500" : "text-white/70"}`}>
               Foreign Employment
             </div>
           </Link>
@@ -64,7 +64,11 @@ export default function Header() {
                     isApply
                       ? "ml-2 px-5 py-2 text-white rounded-full"
                       : isActive
-                      ? "text-white bg-white/20"
+                      ? scrolled
+                        ? "text-gray-900 bg-gray-100"
+                        : "text-white bg-white/20"
+                      : scrolled
+                      ? "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
                       : "text-white/80 hover:text-white hover:bg-white/10"
                   }`}
                   style={
@@ -78,7 +82,7 @@ export default function Header() {
           </nav>
 
           <button
-            className="md:hidden p-2 rounded-lg text-white hover:bg-white/10 transition-colors duration-200"
+            className={`md:hidden p-2 rounded-lg transition-colors duration-200 ${scrolled ? "text-gray-700 hover:bg-gray-100" : "text-white hover:bg-white/10"}`}
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
@@ -89,8 +93,11 @@ export default function Header() {
 
       {menuOpen && (
         <div
-          className="md:hidden border-t border-white/10 backdrop-blur-md"
-          style={{ background: "oklch(18% 0.08 240 / 0.85)" }}
+          className="md:hidden border-t backdrop-blur-md"
+          style={{
+            background: scrolled ? "oklch(100% 0 0 / 0.90)" : "oklch(18% 0.08 240 / 0.85)",
+            borderColor: scrolled ? "oklch(90% 0 0)" : "oklch(100% 0 0 / 0.10)",
+          }}
         >
           <nav className="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-1">
             {navLinks.map(({ href, label }) => {
@@ -104,8 +111,8 @@ export default function Header() {
                     isApply
                       ? "text-white text-center rounded-full mt-1"
                       : isActive
-                      ? "text-white bg-white/20"
-                      : "text-white/80 hover:text-white hover:bg-white/10"
+                      ? scrolled ? "text-gray-900 bg-gray-100" : "text-white bg-white/20"
+                      : scrolled ? "text-gray-600 hover:text-gray-900 hover:bg-gray-50" : "text-white/80 hover:text-white hover:bg-white/10"
                   }`}
                   style={
                     isApply ? { background: "var(--gradient-accent)" } : {}
