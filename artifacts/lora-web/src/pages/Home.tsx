@@ -56,7 +56,7 @@ export default function Home() {
         />
         <div
           className="absolute inset-0"
-          style={{ background: "oklch(12% 0.04 240 / 0.70)" }}
+          style={{ background: "oklch(18% 0.08 240 / 0.72)" }}
         />
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-32">
