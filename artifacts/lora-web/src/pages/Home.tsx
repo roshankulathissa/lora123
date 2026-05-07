@@ -186,8 +186,8 @@ export default function Home() {
               <Reveal key={pillar.title} delay={i * 100}>
                 <div className="relative bg-white rounded-2xl p-6 shadow-sm border border-gray-100 h-full overflow-hidden hover:-translate-y-1 transition-transform duration-300">
                   <div
-                    className="absolute top-2 right-3 text-8xl font-black select-none pointer-events-none"
-                    style={{ color: "oklch(75% 0.18 75 / 0.12)", lineHeight: 1 }}
+                    className="absolute top-2 right-3 text-8xl font-semibold select-none pointer-events-none"
+                    style={{ color: "oklch(75% 0.18 75 / 0.28)", lineHeight: 1 }}
                   >
                     {pillar.letter}
                   </div>
