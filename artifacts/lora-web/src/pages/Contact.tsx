@@ -1,32 +1,5 @@
-import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle, Facebook } from "lucide-react";
 import Reveal from "@/components/Reveal";
-
-const contactItems = [
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "+94 70 404 0407",
-    href: "tel:+94704040407",
-  },
-  {
-    icon: MessageCircle,
-    label: "WhatsApp",
-    value: "+94 70 404 0407",
-    href: "https://wa.me/94704040407",
-  },
-  {
-    icon: Mail,
-    label: "Email",
-    value: "info@loraemployment.lk",
-    href: "mailto:info@loraemployment.lk",
-  },
-  {
-    icon: MapPin,
-    label: "Address",
-    value: "No. 45, Galle Road, Colombo 03, Sri Lanka",
-    href: null,
-  },
-];
 
 export default function Contact() {
   return (
@@ -48,56 +21,120 @@ export default function Contact() {
           <div className="grid lg:grid-cols-2 gap-16">
             <Reveal direction="left">
               <h2 className="text-2xl font-bold text-gray-900 mb-8">Get in Touch</h2>
+
               <div className="space-y-6">
-                {contactItems.map((item) => (
-                  <div key={item.label} className="flex items-start gap-4">
-                    <div
-                      className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
-                      style={{ background: "var(--gradient-accent)" }}
-                    >
-                      <item.icon size={18} className="text-white" />
-                    </div>
-                    <div>
-                      <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">
-                        {item.label}
-                      </p>
-                      {item.href ? (
-                        <a
-                          href={item.href}
-                          target={item.href.startsWith("http") ? "_blank" : undefined}
-                          rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                          className="text-gray-800 font-medium hover:text-gold transition-colors duration-200"
-                        >
-                          {item.value}
-                        </a>
-                      ) : (
-                        <p className="text-gray-800 font-medium">{item.value}</p>
-                      )}
+                <div className="flex items-start gap-4">
+                  <div
+                    className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
+                    style={{ background: "var(--gradient-accent)" }}
+                  >
+                    <MapPin size={18} className="text-white" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Address</p>
+                    <p className="text-gray-800 font-medium leading-relaxed">
+                      LORA Foreign Employment (Pvt) Ltd<br />
+                      139/D First Floor, Kurunegala Road,<br />
+                      Hettipola
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div
+                    className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
+                    style={{ background: "var(--gradient-accent)" }}
+                  >
+                    <Phone size={18} className="text-white" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Mobile</p>
+                    <div className="space-y-0.5">
+                      <a href="tel:+94704040407" className="block text-gray-800 font-medium hover:text-gold transition-colors duration-200">
+                        070 40 40 407
+                      </a>
+                      <a href="tel:+94702340823" className="block text-gray-800 font-medium hover:text-gold transition-colors duration-200">
+                        070 23 40 823
+                      </a>
                     </div>
                   </div>
-                ))}
+                </div>
 
-                <div className="flex items-start gap-4 mt-6">
+                <div className="flex items-start gap-4">
                   <div
                     className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
                     style={{ background: "var(--gradient-primary)" }}
                   >
-                    <Clock size={18} className="text-white" />
+                    <Phone size={18} className="text-white" />
                   </div>
                   <div>
-                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">
-                      Office Hours
-                    </p>
-                    <div className="text-gray-800 text-sm space-y-0.5">
-                      <p>Monday – Friday: 8:30 AM – 5:30 PM</p>
-                      <p>Saturday: 9:00 AM – 1:00 PM</p>
-                      <p className="text-gray-400">Sunday: Closed</p>
-                    </div>
+                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Land Line</p>
+                    <a href="tel:+94372290141" className="text-gray-800 font-medium hover:text-gold transition-colors duration-200">
+                      037 22 90 141
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div
+                    className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
+                    style={{ background: "var(--gradient-accent)" }}
+                  >
+                    <MessageCircle size={18} className="text-white" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">WhatsApp</p>
+                    <a
+                      href="https://wa.me/94704040407"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-800 font-medium hover:text-gold transition-colors duration-200"
+                    >
+                      070 40 40 407
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div
+                    className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
+                    style={{ background: "var(--gradient-primary)" }}
+                  >
+                    <Mail size={18} className="text-white" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Email</p>
+                    <a
+                      href="mailto:loraemp@gmail.com"
+                      className="text-gray-800 font-medium hover:text-gold transition-colors duration-200"
+                    >
+                      loraemp@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div
+                    className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
+                    style={{ background: "#1877F2" }}
+                  >
+                    <Facebook size={18} className="text-white" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Facebook</p>
+                    <a
+                      href="https://www.facebook.com/share/1WYoeBQ2ci/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-800 font-medium hover:text-gold transition-colors duration-200"
+                    >
+                      LORA Foreign Employment
+                    </a>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-10">
+              <div className="mt-10 flex flex-wrap gap-3">
                 <a
                   href="https://wa.me/94704040407"
                   target="_blank"
@@ -108,6 +145,16 @@ export default function Contact() {
                   <MessageCircle size={18} />
                   Chat on WhatsApp
                 </a>
+                <a
+                  href="https://www.facebook.com/share/1WYoeBQ2ci/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white font-medium transition-opacity hover:opacity-90"
+                  style={{ background: "#1877F2" }}
+                >
+                  <Facebook size={18} />
+                  Follow on Facebook
+                </a>
               </div>
             </Reveal>
 
@@ -115,7 +162,7 @@ export default function Contact() {
               <h2 className="text-2xl font-bold text-gray-900 mb-8">Find Our Office</h2>
               <div className="rounded-2xl overflow-hidden shadow-card border border-gray-100 h-80">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0!2d79.8574!3d6.9037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTQnMTMuMyJOIDc5wrA1MScyNi42IkU!5e0!3m2!1sen!2slk!4v1234567890"
+                  src="https://maps.google.com/maps?q=Hettipola+139%2FD+Kurunegala+Road&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -127,8 +174,17 @@ export default function Contact() {
               </div>
               <p className="mt-4 text-sm text-gray-500 flex items-start gap-2">
                 <MapPin size={14} className="mt-0.5 flex-shrink-0 text-gold" />
-                No. 45, Galle Road, Colombo 03, Sri Lanka. Near Liberty Plaza.
+                139/D First Floor, Kurunegala Road, Hettipola.
               </p>
+              <a
+                href="https://maps.app.goo.gl/PSjTNrvak1tTqg9h8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-gold hover:underline"
+              >
+                <MapPin size={14} />
+                Open in Google Maps
+              </a>
             </Reveal>
           </div>
         </div>
