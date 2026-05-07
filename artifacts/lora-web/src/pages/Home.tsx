@@ -43,7 +43,6 @@ const services = [
   "Post-placement welfare support",
 ];
 
-const destinations = ["Qatar", "UAE", "Saudi Arabia", "Kuwait", "Malaysia", "Oman", "Bahrain", "Jordan"];
 
 export default function Home() {
   return (
@@ -100,17 +99,6 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="mt-16 flex flex-wrap justify-center gap-3">
-            {destinations.map((d) => (
-              <span
-                key={d}
-                className="px-3 py-1 rounded-full text-xs font-medium text-white/70"
-                style={{ background: "oklch(100% 0 0 / 0.08)", border: "1px solid oklch(100% 0 0 / 0.15)" }}
-              >
-                {d}
-              </span>
-            ))}
-          </div>
         </div>
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
