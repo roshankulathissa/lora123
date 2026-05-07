@@ -43,6 +43,19 @@ export default function Contact() {
                 <div className="flex items-start gap-4">
                   <div
                     className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
+                    style={{ background: "var(--gradient-primary)" }}
+                  >
+                    <span className="text-white text-xs font-bold">Lic</span>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Labour Licence</p>
+                    <p className="text-gray-800 font-medium">3777</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div
+                    className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
                     style={{ background: "var(--gradient-accent)" }}
                   >
                     <Phone size={18} className="text-white" />
