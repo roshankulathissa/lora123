@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 
 const stats = [
   { label: "Years of Experience", value: "15+" },
-  { label: "Successful Placements", value: "5,000+" },
+  { label: "Opportunities", value: "100+" },
   { label: "Partner Countries", value: "8+" },
   { label: "Active Job Orders", value: "300+" },
 ];
