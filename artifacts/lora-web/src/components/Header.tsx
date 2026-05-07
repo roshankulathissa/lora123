@@ -35,7 +35,7 @@ export default function Header() {
       }`}
       style={{
         background: scrolled
-          ? "oklch(100% 0 0 / 0.80)"
+          ? "oklch(100% 0 0 / 0.60)"
           : "linear-gradient(135deg, oklch(18% 0.05 240 / 0.92) 0%, oklch(28% 0.08 240 / 0.92) 50%, oklch(22% 0.06 250 / 0.92) 100%)",
       }}
     >
