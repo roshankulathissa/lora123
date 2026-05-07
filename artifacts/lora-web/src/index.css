@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-lora-gold: oklch(75% 0.18 75);
+  --color-lora-dark: oklch(18% 0.02 240);
+  --color-lora-navy: oklch(25% 0.06 240);
+  --color-lora-blue: oklch(45% 0.12 240);
+  --color-lora-light: oklch(96% 0.01 240);
+}
+
+:root {
+  --gradient-hero: linear-gradient(135deg, oklch(18% 0.05 240) 0%, oklch(28% 0.08 240) 50%, oklch(22% 0.06 250) 100%);
+  --gradient-primary: linear-gradient(135deg, oklch(40% 0.12 240) 0%, oklch(30% 0.08 240) 100%);
+  --gradient-accent: linear-gradient(135deg, oklch(75% 0.18 75) 0%, oklch(65% 0.15 60) 100%);
+  --gradient-overlay: linear-gradient(to bottom, oklch(18% 0.05 240 / 0.7) 0%, oklch(18% 0.05 240 / 0.4) 100%);
+  --shadow-elegant: 0 4px 24px oklch(18% 0.05 240 / 0.15), 0 1px 4px oklch(18% 0.05 240 / 0.1);
+  --shadow-glow: 0 0 32px oklch(75% 0.18 75 / 0.3), 0 4px 16px oklch(75% 0.18 75 / 0.15);
+  --shadow-card: 0 2px 16px oklch(18% 0.05 240 / 0.08), 0 1px 4px oklch(18% 0.05 240 / 0.05);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: oklch(20% 0.02 240);
+  background: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+.gradient-hero {
+  background: var(--gradient-hero);
+}
+
+.gradient-primary {
+  background: var(--gradient-primary);
+}
+
+.gradient-accent {
+  background: var(--gradient-accent);
+}
+
+.shadow-elegant {
+  box-shadow: var(--shadow-elegant);
+}
+
+.shadow-glow {
+  box-shadow: var(--shadow-glow);
+}
+
+.shadow-card {
+  box-shadow: var(--shadow-card);
+}
+
+.text-gold {
+  color: oklch(75% 0.18 75);
+}
+
+.bg-gold {
+  background-color: oklch(75% 0.18 75);
+}
+
+.border-gold {
+  border-color: oklch(75% 0.18 75);
+}
