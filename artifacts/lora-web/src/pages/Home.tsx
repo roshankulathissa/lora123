@@ -49,12 +49,15 @@ export default function Home() {
     <div>
       <section
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
-        style={{ background: "var(--gradient-hero)" }}
       >
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-white blur-3xl" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-white blur-3xl" />
-        </div>
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/home-hero.png')" }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{ background: "oklch(12% 0.04 240 / 0.70)" }}
+        />
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-32">
           <div

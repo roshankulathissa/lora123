@@ -6,3 +6,9 @@ id = "aON58zsW67TeEBmAxaBwh"
 uri = "file://artifacts/lora-web/public/jobs-hero.png"
 type = "image"
 title = "generated_image"
+
+[[generated]]
+id = "8D0t3_TvpDhirfN-cDOIj"
+uri = "file://artifacts/lora-web/public/home-hero.png"
+type = "image"
+title = "generated_image"
