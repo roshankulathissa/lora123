@@ -11,16 +11,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div
-                className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-white text-sm"
-                style={{ background: "var(--gradient-accent)" }}
-              >
-                L
-              </div>
-              <div>
-                <div className="font-bold text-lg leading-tight">LORA</div>
-                <div className="text-xs text-white/60">Foreign Employment</div>
-              </div>
+              <img
+                src="/lora-logo.png"
+                alt="LORA Foreign Employment"
+                className="h-10 w-auto object-contain"
+              />
+              <div className="text-xs text-white/60">Foreign Employment</div>
             </div>
             <p className="text-white/70 text-sm leading-relaxed mb-5">
               Sri Lanka's trusted overseas recruitment agency, connecting

@@ -35,28 +35,18 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          <Link href="/" className="flex items-center gap-3 flex-shrink-0">
+          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
+            <img
+              src="/lora-logo.png"
+              alt="LORA Foreign Employment"
+              className="h-10 w-auto object-contain"
+            />
             <div
-              className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-white text-sm"
-              style={{ background: "var(--gradient-accent)" }}
+              className={`text-xs leading-tight transition-colors duration-300 hidden sm:block ${
+                scrolled ? "text-gray-500" : "text-white/70"
+              }`}
             >
-              L
-            </div>
-            <div>
-              <div
-                className={`font-bold text-lg leading-tight transition-colors duration-300 ${
-                  scrolled ? "text-gray-900" : "text-white"
-                }`}
-              >
-                LORA
-              </div>
-              <div
-                className={`text-xs leading-tight transition-colors duration-300 ${
-                  scrolled ? "text-gray-500" : "text-white/70"
-                }`}
-              >
-                Foreign Employment
-              </div>
+              Foreign Employment
             </div>
           </Link>
 
