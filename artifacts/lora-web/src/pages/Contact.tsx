@@ -78,26 +78,6 @@ export default function Contact() {
                 <div className="flex items-start gap-4">
                   <div
                     className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: "var(--gradient-accent)" }}
-                  >
-                    <MessageCircle size={18} className="text-white" />
-                  </div>
-                  <div>
-                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">WhatsApp</p>
-                    <a
-                      href="https://wa.me/94704040407"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-800 font-medium hover:text-gold transition-colors duration-200"
-                    >
-                      070 40 40 407
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div
-                    className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
                     style={{ background: "var(--gradient-primary)" }}
                   >
                     <Mail size={18} className="text-white" />
