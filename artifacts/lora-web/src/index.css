@@ -31,6 +31,11 @@ body {
   color: oklch(20% 0.02 240);
   background: white;
   -webkit-font-smoothing: antialiased;
+  cursor: url('/cursor-plane.svg') 18 18, auto;
+}
+
+a, button, [role="button"], input, select, textarea, label {
+  cursor: url('/cursor-plane.svg') 18 18, pointer;
 }
 
 .gradient-hero {
