@@ -40,3 +40,8 @@ externalPort = 3000
 [[ports]]
 localPort = 5002
 externalPort = 3001
+
+[deployment]
+deploymentTarget = "static"
+build = ["pnpm", "--filter", "@workspace/lora-web", "run", "build"]
+publicDir = "artifacts/lora-web/dist"
