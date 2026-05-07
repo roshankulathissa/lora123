@@ -52,7 +52,7 @@ export default function Home() {
       >
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/home-hero.png')" }}
+          style={{ backgroundImage: "url('/home-hero.jpg')" }}
         />
         <div
           className="absolute inset-0"
