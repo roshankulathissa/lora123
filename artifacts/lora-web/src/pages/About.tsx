@@ -10,16 +10,16 @@ const stats = [
 
 const team = [
   {
-    name: "Mrs. Rasanjali Perera",
-    title: "Managing Director",
-    image: "/director-rasanjali.jpeg",
-    bio: "With over 15 years in overseas recruitment, Mrs. Perera founded LORA with a vision to create ethical pathways for Sri Lankan workers seeking international opportunities. She holds a diploma in Human Resource Management.",
+    name: "W.P.W. Rasanjali Jayakodi",
+    title: "Licensee",
+    image: "/rasanjali.jpeg",
+    bio: "Mrs. Rasanjali Jayakodi is the licensed proprietor of LORA Foreign Employment (Pvt) Ltd, holding the official SLBFE license that authorizes all overseas recruitment operations. With a deep commitment to ethical and legal compliance, she ensures every placement meets the highest regulatory standards set by the Sri Lanka Bureau of Foreign Employment.",
   },
   {
-    name: "Mrs. Udeshika Fernando",
+    name: "W.P.A. Udeshika Rasaj",
     title: "Managing Director",
-    image: "/director-udeshika.jpeg",
-    bio: "Mrs. Fernando brings expertise in international labor law and employer relations. She oversees LORA's global partnerships and ensures the highest standards of candidate welfare throughout the recruitment process.",
+    image: "/udeshika.jpeg",
+    bio: "Mr. Udeshika Rasaj leads the day-to-day operations of LORA Foreign Employment as Managing Director. He oversees recruitment activities, employer partnerships, and candidate welfare, driving the company's mission to connect Sri Lankan talent with trusted overseas opportunities across the Middle East and Asia.",
   },
 ];
 
