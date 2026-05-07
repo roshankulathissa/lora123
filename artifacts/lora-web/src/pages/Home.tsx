@@ -166,6 +166,52 @@ export default function Home() {
         </div>
       </section>
 
+      <section
+        className="relative py-28 overflow-hidden"
+        style={{ background: "var(--gradient-hero)" }}
+      >
+        <div className="absolute inset-0 pointer-events-none select-none overflow-hidden">
+          <div className="absolute -left-10 top-1/2 -translate-y-1/2 text-[18rem] font-black text-white/[0.03] leading-none">&#8220;</div>
+          <div className="absolute -right-10 bottom-0 text-[18rem] font-black text-white/[0.03] leading-none">&#8221;</div>
+          <div className="absolute inset-0 flex items-center justify-center opacity-5">
+            <div className="w-full h-px bg-gradient-to-r from-transparent via-white to-transparent" style={{ transform: "rotate(-3deg) scaleX(2)" }} />
+          </div>
+        </div>
+
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Reveal>
+            <div className="mb-6 flex justify-center">
+              <div className="flex items-center gap-3">
+                <div className="h-px w-12 bg-gradient-to-r from-transparent to-amber-400 opacity-60" />
+                <span className="text-amber-400/80 text-xs font-bold uppercase tracking-[0.25em]">Our Promise</span>
+                <div className="h-px w-12 bg-gradient-to-l from-transparent to-amber-400 opacity-60" />
+              </div>
+            </div>
+
+            <blockquote>
+              <p className="text-2xl sm:text-3xl lg:text-4xl font-light text-white/90 leading-relaxed mb-3">
+                "At LORA, we don't just{" "}
+                <span className="italic text-white">move people across borders</span>;
+              </p>
+              <p
+                className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-clip-text text-transparent leading-tight"
+                style={{ backgroundImage: "var(--gradient-accent)" }}
+              >
+                we move lives forward."
+              </p>
+            </blockquote>
+
+            <div className="mt-10 flex justify-center">
+              <div className="flex items-center gap-2 opacity-50">
+                <div className="h-px w-16 bg-white" />
+                <span className="text-white text-xs tracking-widest uppercase">LORA Foreign Employment</span>
+                <div className="h-px w-16 bg-white" />
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="py-24" style={{ background: "#eef2f7" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal className="text-center mb-14">
