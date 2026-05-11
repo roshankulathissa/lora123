@@ -90,14 +90,14 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Founded in 2010, LORA Foreign Employment (Pvt) Ltd was established with a
-                  simple but powerful mission: to provide every Sri Lankan job seeker with
-                  safe, legitimate, and rewarding overseas employment opportunities.
+                  LORA Foreign Employment (Pvt) Ltd was established with a simple but
+                  powerful mission: to provide every Sri Lankan job seeker with safe,
+                  legitimate, and rewarding overseas employment opportunities.
                 </p>
                 <p>
-                  Over the years, we have grown from a small local agency to a recognized
-                  name in overseas recruitment, with established relationships with hundreds
-                  of employers across the Middle East and Asia-Pacific regions.
+                  We have grown into a recognized name in overseas recruitment, with
+                  established relationships with hundreds of employers across the Middle
+                  East and Asia-Pacific regions.
                 </p>
                 <p>
                   We are fully licensed by the Sri Lanka Bureau of Foreign Employment (SLBFE)
