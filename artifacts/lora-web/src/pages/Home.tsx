@@ -350,12 +350,12 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-                <Link href="/contact">
+                <a href="https://wa.me/94704040407" target="_blank" rel="noopener noreferrer">
                   <Button variant="hero" gradientStyle="accent" className="rounded-full px-7">
                     Enquire About Air Tickets
                     <ArrowRight size={16} />
                   </Button>
-                </Link>
+                </a>
               </div>
             </Reveal>
           </div>
