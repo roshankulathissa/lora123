@@ -92,6 +92,15 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="tel:+94711567174"
+                  className="flex items-center gap-3 text-sm text-white/70 hover:text-white transition-colors duration-200"
+                >
+                  <Phone size={16} className="flex-shrink-0 text-gold" />
+                  071 15 67 174
+                </a>
+              </li>
+              <li>
+                <a
                   href="mailto:loraemp@gmail.com"
                   className="flex items-center gap-3 text-sm text-white/70 hover:text-white transition-colors duration-200"
                 >

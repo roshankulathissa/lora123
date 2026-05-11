@@ -69,6 +69,9 @@ export default function Contact() {
                       <a href="tel:+94702340823" className="block text-gray-800 font-medium hover:text-gold transition-colors duration-200">
                         070 23 40 823
                       </a>
+                      <a href="tel:+94711567174" className="block text-gray-800 font-medium hover:text-gold transition-colors duration-200">
+                        071 15 67 174
+                      </a>
                     </div>
                   </div>
                 </div>
