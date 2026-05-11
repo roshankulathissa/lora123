@@ -2,7 +2,6 @@ import { Users, Award, Globe, Heart } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
 const stats = [
-  { label: "Years of Experience", value: "15+" },
   { label: "Opportunities", value: "100+" },
   { label: "Partner Countries", value: "8+" },
   { label: "Active Job Orders", value: "300+" },
