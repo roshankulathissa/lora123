@@ -57,8 +57,8 @@ export default function About() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">About LORA</h1>
           <p className="text-white/70 text-lg leading-relaxed max-w-2xl mx-auto">
-            LORA Foreign Employment (Pvt) Ltd has been a trusted name in Sri Lankan overseas
-            recruitment since 2010. Licensed, ethical, and committed to your success.
+            LORA Foreign Employment (Pvt) Ltd is a trusted name in Sri Lankan overseas
+            recruitment. Licensed, ethical, and committed to your success.
           </p>
         </div>
       </section>
