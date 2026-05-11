@@ -89,7 +89,7 @@ export default function Home() {
                 gradientStyle="accent"
                 className="rounded-full px-8"
               >
-                Browse Jobs
+                Overseas Jobs
                 <ArrowRight size={18} />
               </Button>
             </Link>
