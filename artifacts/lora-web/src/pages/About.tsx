@@ -155,9 +155,9 @@ export default function About() {
 
           <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
             {team.map((member, i) => (
-              <Reveal key={member.name} delay={i * 150}>
-                <div className="bg-white rounded-2xl shadow-card border border-gray-100 overflow-hidden">
-                  <div className="h-72 overflow-hidden">
+              <Reveal key={member.name} delay={i * 150} className="h-full">
+                <div className="bg-white rounded-2xl shadow-card border border-gray-100 overflow-hidden flex flex-col h-full">
+                  <div className="h-72 overflow-hidden flex-shrink-0">
                     <img
                       src={member.image}
                       alt={member.name}
@@ -170,7 +170,7 @@ export default function About() {
                       }}
                     />
                   </div>
-                  <div className="p-6">
+                  <div className="p-6 flex flex-col flex-1">
                     <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
                     <p className="text-gold text-sm font-medium mb-3">{member.title}</p>
                     <p className="text-gray-600 text-sm leading-relaxed">{member.bio}</p>
