@@ -67,7 +67,7 @@ const jobs: Job[] = [
     category: "Manufacturing",
     salary: "MYR 1,500 – 1,800 / month",
     positions: 100,
-    requirements: ["Basic education", "Age 18–40", "Both male and female"],
+    requirements: ["Basic education", "Age 22–40", "Both male and female"],
     description:
       "Production line roles in food processing factories. Overtime opportunities available.",
   },
