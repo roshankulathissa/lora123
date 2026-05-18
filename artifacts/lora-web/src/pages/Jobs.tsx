@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "wouter";
-import { MapPin, DollarSign, Users, ArrowRight, Search, Briefcase } from "lucide-react";
+import { MapPin, DollarSign, Users, ArrowRight, Search, Briefcase, ShieldCheck } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
 
@@ -51,6 +51,14 @@ export default function Jobs() {
           <p className="text-white/70 text-lg max-w-xl mx-auto">
             Browse our current verified overseas positions across the Middle East and Asia.
           </p>
+          <div className="mt-6">
+            <Link href="/login">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-amber-400/60 bg-amber-400/10 text-amber-300 text-sm font-medium hover:bg-amber-400/20 transition-colors cursor-pointer">
+                <ShieldCheck size={15} />
+                Labour Licence No. <strong className="text-amber-200 underline underline-offset-2">3777</strong>
+              </span>
+            </Link>
+          </div>
         </div>
       </section>
 

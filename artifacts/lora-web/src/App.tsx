@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Apply from "./pages/Apply";
 import Resources from "./pages/Resources";
+import Login from "./pages/Login";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/contact" component={Contact} />
           <Route path="/apply" component={Apply} />
           <Route path="/resources" component={Resources} />
+          <Route path="/login" component={Login} />
         </Switch>
       </main>
       <Footer />
