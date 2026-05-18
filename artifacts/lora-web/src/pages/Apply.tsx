@@ -55,17 +55,21 @@ export default function Apply() {
             The fastest way to apply is directly through WhatsApp. Our team responds
             quickly and guides you through every step.
           </p>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-full text-white font-semibold text-lg transition-opacity hover:opacity-90 shadow-glow"
-            style={{ background: "#25D366" }}
-          >
-            <MessageCircle size={22} />
-            Open WhatsApp
-            <ArrowRight size={18} />
-          </a>
+          <div className="relative inline-block">
+            <span className="absolute inset-0 rounded-full animate-ping" style={{ background: "#25D366", opacity: 0.4 }} />
+            <span className="absolute inset-0 rounded-full animate-ping animation-delay-300" style={{ background: "#25D366", opacity: 0.25, animationDelay: "0.4s" }} />
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative inline-flex items-center gap-3 px-8 py-4 rounded-full text-white font-semibold text-lg hover:scale-105 active:scale-95 transition-transform duration-200 shadow-lg"
+              style={{ background: "#25D366" }}
+            >
+              <MessageCircle size={22} />
+              Open WhatsApp
+              <ArrowRight size={18} />
+            </a>
+          </div>
         </div>
       </section>
 
