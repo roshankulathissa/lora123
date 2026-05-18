@@ -36,19 +36,37 @@ export default function Jobs() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   useEffect(() => {
+    let done = false;
+    const timer = setTimeout(() => {
+      if (!done) {
+        done = true;
+        setJobs(fallbackJobs);
+        setLoading(false);
+      }
+    }, 5000);
+
     const fetchJobs = async () => {
       try {
         const q = query(collection(db, "jobs"), orderBy("createdAt", "asc"));
         const snap = await getDocs(q);
-        const fetched = snap.docs.map((d) => ({ id: d.id, ...d.data() } as Job));
-        setJobs(fetched.length > 0 ? fetched : fallbackJobs);
+        if (!done) {
+          done = true;
+          clearTimeout(timer);
+          const fetched = snap.docs.map((d) => ({ id: d.id, ...d.data() } as Job));
+          setJobs(fetched.length > 0 ? fetched : fallbackJobs);
+          setLoading(false);
+        }
       } catch {
-        setJobs(fallbackJobs);
-      } finally {
-        setLoading(false);
+        if (!done) {
+          done = true;
+          clearTimeout(timer);
+          setJobs(fallbackJobs);
+          setLoading(false);
+        }
       }
     };
     fetchJobs();
+    return () => clearTimeout(timer);
   }, []);
 
   const categories = ["All", ...Array.from(new Set(jobs.map((j) => j.category)))];
