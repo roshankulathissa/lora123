@@ -1,4 +1,4 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, useLocation } from "wouter";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -7,11 +7,15 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Apply from "./pages/Apply";
 import Resources from "./pages/Resources";
+import Admin from "./pages/Admin";
 
 export default function App() {
+  const [location] = useLocation();
+  const isAdmin = location.startsWith("/admin");
+
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
+      {!isAdmin && <Header />}
       <main className="flex-1">
         <Switch>
           <Route path="/" component={Home} />
@@ -20,9 +24,10 @@ export default function App() {
           <Route path="/contact" component={Contact} />
           <Route path="/apply" component={Apply} />
           <Route path="/resources" component={Resources} />
+          <Route path="/admin" component={Admin} />
         </Switch>
       </main>
-      <Footer />
+      {!isAdmin && <Footer />}
     </div>
   );
 }
