@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { MessageCircle, ArrowRight, CheckCircle } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
@@ -38,13 +37,6 @@ const documents = [
 ];
 
 export default function Apply() {
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      window.open(WHATSAPP_URL, "_blank", "noopener,noreferrer");
-    }, 2500);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div className="pt-20">
       <section
@@ -74,9 +66,6 @@ export default function Apply() {
             Open WhatsApp
             <ArrowRight size={18} />
           </a>
-          <p className="mt-6 text-white/50 text-sm">
-            Opening WhatsApp automatically in a few seconds...
-          </p>
         </div>
       </section>
 
