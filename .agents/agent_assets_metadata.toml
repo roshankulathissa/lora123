@@ -1,5 +1,4 @@
 uploads = []
-outputs = []
 
 [[generated]]
 id = "aON58zsW67TeEBmAxaBwh"
@@ -12,3 +11,9 @@ id = "8D0t3_TvpDhirfN-cDOIj"
 uri = "file://artifacts/lora-web/public/home-hero.png"
 type = "image"
 title = "generated_image"
+
+[[outputs]]
+id = "PlaxFqcDsExWsDnGhaq3Y"
+uri = "file://lora-web.tar.gz"
+type = "unspecified"
+title = "LORA Website — Source Code"
