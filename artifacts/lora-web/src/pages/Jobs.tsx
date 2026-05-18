@@ -30,43 +30,23 @@ const fallbackJobs: Job[] = [
 ];
 
 export default function Jobs() {
-  const [jobs, setJobs] = useState<Job[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [jobs, setJobs] = useState<Job[]>(fallbackJobs);
+  const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   useEffect(() => {
-    let done = false;
-    const timer = setTimeout(() => {
-      if (!done) {
-        done = true;
-        setJobs(fallbackJobs);
-        setLoading(false);
-      }
-    }, 5000);
-
     const fetchJobs = async () => {
       try {
         const q = query(collection(db, "jobs"), orderBy("createdAt", "asc"));
         const snap = await getDocs(q);
-        if (!done) {
-          done = true;
-          clearTimeout(timer);
-          const fetched = snap.docs.map((d) => ({ id: d.id, ...d.data() } as Job));
-          setJobs(fetched.length > 0 ? fetched : fallbackJobs);
-          setLoading(false);
-        }
+        const fetched = snap.docs.map((d) => ({ id: d.id, ...d.data() } as Job));
+        if (fetched.length > 0) setJobs(fetched);
       } catch {
-        if (!done) {
-          done = true;
-          clearTimeout(timer);
-          setJobs(fallbackJobs);
-          setLoading(false);
-        }
+        // keep fallback jobs already shown
       }
     };
     fetchJobs();
-    return () => clearTimeout(timer);
   }, []);
 
   const categories = ["All", ...Array.from(new Set(jobs.map((j) => j.category)))];
