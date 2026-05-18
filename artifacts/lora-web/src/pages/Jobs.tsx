@@ -1,8 +1,6 @@
-import { useState, useEffect } from "react";
-import { collection, getDocs, orderBy, query } from "firebase/firestore";
-import { db } from "@/lib/firebase";
+import { useState } from "react";
 import { Link } from "wouter";
-import { MapPin, Briefcase, DollarSign, Users, ArrowRight, Search, Loader2 } from "lucide-react";
+import { MapPin, DollarSign, Users, ArrowRight, Search, Briefcase } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
 
@@ -17,7 +15,7 @@ interface Job {
   description: string;
 }
 
-const fallbackJobs: Job[] = [
+const jobs: Job[] = [
   { id: "1", title: "Construction Worker", country: "Qatar", category: "Construction", salary: "QAR 1,200 – 1,500 / month", positions: 50, requirements: ["Physical fitness", "Prior construction experience preferred", "Age 22–45"], description: "Work on large-scale infrastructure and building projects in Qatar. Accommodation, meals, and transport provided by employer." },
   { id: "2", title: "Housemaid / Domestic Helper", country: "UAE", category: "Domestic", salary: "AED 1,000 – 1,400 / month", positions: 30, requirements: ["Female candidates", "Age 21–45", "Basic English or Arabic preferred"], description: "Live-in domestic helper positions with reputable families in Dubai and Abu Dhabi. Full accommodation and meals included." },
   { id: "3", title: "Electrician (Skilled)", country: "Saudi Arabia", category: "Skilled Trade", salary: "SAR 1,800 – 2,400 / month", positions: 20, requirements: ["NVQ Level 3 or equivalent", "5+ years experience", "Age 25–45"], description: "Skilled electrician roles for industrial and commercial projects. ARAMCO-approved facilities." },
@@ -30,24 +28,8 @@ const fallbackJobs: Job[] = [
 ];
 
 export default function Jobs() {
-  const [jobs, setJobs] = useState<Job[]>(fallbackJobs);
-  const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
-
-  useEffect(() => {
-    const fetchJobs = async () => {
-      try {
-        const q = query(collection(db, "jobs"), orderBy("createdAt", "asc"));
-        const snap = await getDocs(q);
-        const fetched = snap.docs.map((d) => ({ id: d.id, ...d.data() } as Job));
-        if (fetched.length > 0) setJobs(fetched);
-      } catch {
-        // keep fallback jobs already shown
-      }
-    };
-    fetchJobs();
-  }, []);
 
   const categories = ["All", ...Array.from(new Set(jobs.map((j) => j.category)))];
 
@@ -105,11 +87,7 @@ export default function Jobs() {
 
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {loading ? (
-            <div className="flex items-center justify-center py-24">
-              <Loader2 className="animate-spin text-amber-500" size={32} />
-            </div>
-          ) : filtered.length === 0 ? (
+          {filtered.length === 0 ? (
             <div className="text-center py-20 text-gray-400">
               <Briefcase size={48} className="mx-auto mb-4 opacity-30" />
               <p>No jobs found matching your search.</p>

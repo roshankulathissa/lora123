@@ -141,12 +141,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
           <p>© {new Date().getFullYear()} LORA Foreign Employment (Pvt) Ltd. All rights reserved.</p>
-          <div className="flex items-center gap-4">
-            <p>Labour Licence No. 3777 — Licensed by SLBFE</p>
-            <Link href="/admin" className="text-white/20 hover:text-white/50 transition-colors duration-200 text-xs">
-              Admin Portal
-            </Link>
-          </div>
+          <p>Labour Licence No. 3777 — Licensed by SLBFE</p>
         </div>
       </div>
     </footer>
