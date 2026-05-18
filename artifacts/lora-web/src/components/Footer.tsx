@@ -129,7 +129,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-white/70">
               <li>
                 <p className="text-white/40 text-xs uppercase tracking-wider mb-1">Labour Licence</p>
-                <p className="text-white font-semibold text-base">3777</p>
+                <Link href="/login" className="text-white font-semibold text-base cursor-default select-none">3777</Link>
               </li>
               <li className="pt-1 text-white/60 leading-relaxed">
                 Licensed by the Sri Lanka Bureau of Foreign Employment (SLBFE).
