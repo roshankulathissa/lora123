@@ -1,0 +1,78 @@
+2026-05-21T12:01:59.022Z	Initializing build environment...
+2026-05-21T12:02:01.527Z	Success: Finished initializing build environment
+2026-05-21T12:02:02.249Z	Cloning repository...
+2026-05-21T12:02:06.823Z	Restoring from dependencies cache
+2026-05-21T12:02:06.826Z	Restoring from build output cache
+2026-05-21T12:02:08.818Z	Detected the following tools from environment: pnpm@10.26.1, nodejs@20.20.2
+2026-05-21T12:02:08.818Z	Installing nodejs 20.20.2
+2026-05-21T12:02:18.667Z	Installing project dependencies: pnpm install --frozen-lockfile
+2026-05-21T12:02:19.259Z	Scope: all 2 workspace projects
+2026-05-21T12:02:19.361Z	Lockfile is up to date, resolution step is skipped
+2026-05-21T12:02:19.417Z	Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-05-21T12:02:19.480Z	Packages: +168
+2026-05-21T12:02:19.480Z	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-05-21T12:02:20.418Z	Progress: resolved 168, reused 0, downloaded 0, added 0
+2026-05-21T12:02:21.419Z	Progress: resolved 168, reused 0, downloaded 2, added 0
+2026-05-21T12:02:22.420Z	Progress: resolved 168, reused 0, downloaded 67, added 16
+2026-05-21T12:02:23.420Z	Progress: resolved 168, reused 0, downloaded 105, added 28
+2026-05-21T12:02:24.421Z	Progress: resolved 168, reused 0, downloaded 125, added 32
+2026-05-21T12:02:25.421Z	Progress: resolved 168, reused 0, downloaded 135, added 36
+2026-05-21T12:02:26.424Z	Progress: resolved 168, reused 0, downloaded 155, added 42
+2026-05-21T12:02:27.424Z	Progress: resolved 168, reused 0, downloaded 156, added 43
+2026-05-21T12:02:28.429Z	Progress: resolved 168, reused 0, downloaded 168, added 158
+2026-05-21T12:02:28.439Z	Progress: resolved 168, reused 0, downloaded 168, added 168, done
+2026-05-21T12:02:28.535Z	.../esbuild@0.27.3/node_modules/esbuild postinstall$ node install.js
+2026-05-21T12:02:28.598Z	.../esbuild@0.27.3/node_modules/esbuild postinstall: Done
+2026-05-21T12:02:28.678Z	
+2026-05-21T12:02:28.678Z	devDependencies:
+2026-05-21T12:02:28.678Z	+ prettier 3.8.1
+2026-05-21T12:02:28.678Z	+ typescript 5.9.3
+2026-05-21T12:02:28.678Z	
+2026-05-21T12:02:28.695Z	. preinstall$ sh -c 'rm -f package-lock.json yarn.lock; case "$npm_config_user_agent" in pnpm/*) ;; *) echo "Use pnpm instead" >&2; exit 1 ;; esac'
+2026-05-21T12:02:28.703Z	. preinstall: Done
+2026-05-21T12:02:28.716Z	Done in 9.8s using pnpm v10.26.1
+2026-05-21T12:02:28.861Z	Executing user build command: pnpm run build
+2026-05-21T12:02:29.278Z	
+2026-05-21T12:02:29.278Z	> workspace@0.0.0 build /opt/buildhome/repo
+2026-05-21T12:02:29.279Z	> pnpm run typecheck && pnpm -r --if-present run build
+2026-05-21T12:02:29.279Z	
+2026-05-21T12:02:29.632Z	
+2026-05-21T12:02:29.632Z	> workspace@0.0.0 typecheck /opt/buildhome/repo
+2026-05-21T12:02:29.632Z	> pnpm run typecheck:libs && pnpm -r --filter "./artifacts/**" --filter "./scripts" --if-present run typecheck
+2026-05-21T12:02:29.632Z	
+2026-05-21T12:02:29.963Z	
+2026-05-21T12:02:29.963Z	> workspace@0.0.0 typecheck:libs /opt/buildhome/repo
+2026-05-21T12:02:29.963Z	> tsc --build
+2026-05-21T12:02:29.963Z	
+2026-05-21T12:02:30.504Z	No projects matched the filters "/opt/buildhome/repo/scripts" in "/opt/buildhome/repo"
+2026-05-21T12:02:30.518Z	
+2026-05-21T12:02:30.518Z	> @workspace/lora-web@0.0.0 typecheck /opt/buildhome/repo/artifacts/lora-web
+2026-05-21T12:02:30.518Z	> tsc -b
+2026-05-21T12:02:30.518Z	
+2026-05-21T12:02:33.946Z	
+2026-05-21T12:02:33.946Z	> @workspace/lora-web@0.0.0 build /opt/buildhome/repo/artifacts/lora-web
+2026-05-21T12:02:33.946Z	> tsc -b && vite build
+2026-05-21T12:02:33.946Z	
+2026-05-21T12:02:37.175Z	vite v7.3.2 building client environment for production...
+2026-05-21T12:02:37.256Z	transforming...
+2026-05-21T12:02:40.193Z	✓ 1698 modules transformed.
+2026-05-21T12:02:40.524Z	rendering chunks...
+2026-05-21T12:02:40.535Z	computing gzip size...
+2026-05-21T12:02:40.546Z	dist/index.html                   0.97 kB │ gzip:  0.50 kB
+2026-05-21T12:02:40.546Z	dist/assets/index-BWb01Bq9.css   35.92 kB │ gzip:  6.72 kB
+2026-05-21T12:02:40.546Z	dist/assets/index-DJrwJb84.js   283.41 kB │ gzip: 86.10 kB
+2026-05-21T12:02:40.546Z	✓ built in 3.34s
+2026-05-21T12:02:40.640Z	Success: Build command completed
+2026-05-21T12:02:40.844Z	Executing user deploy command: npx wrangler deploy
+2026-05-21T12:02:41.912Z	npm warn exec The following package was not found and will be installed: wrangler@4.86.0
+2026-05-21T12:02:55.695Z	
+2026-05-21T12:02:55.695Z	 ⛅️ wrangler 4.86.0
+2026-05-21T12:02:55.695Z	───────────────────
+2026-05-21T12:02:55.876Z	
+2026-05-21T12:02:55.876Z	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2026-05-21T12:02:55.877Z	
+2026-05-21T12:02:55.923Z	✘ [ERROR] The Wrangler application detection logic has been run in the root of a workspace instead of targeting a specific project. Change your working directory to one of the applications in the workspace and try again.
+2026-05-21T12:02:55.923Z	
+2026-05-21T12:02:55.923Z	
+2026-05-21T12:02:55.953Z	🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2026-05-21_12-02-55_375.log"
+2026-05-21T12:02:56.026Z	Failed: error occurred while running deploy command
