@@ -1,0 +1,89 @@
+2026-05-21T12:28:55.6415Z	Cloning repository...
+2026-05-21T12:28:56.989522Z	From https://github.com/roshankulathissa/lora123
+2026-05-21T12:28:56.989864Z	 * branch            18c1a14fb869b839032bd1321255ea8cbfef583a -> FETCH_HEAD
+2026-05-21T12:28:56.98993Z	
+2026-05-21T12:28:57.05072Z	HEAD is now at 18c1a14 Add pnpm version to package.json for consistent builds
+2026-05-21T12:28:57.051032Z	
+2026-05-21T12:28:57.090609Z	
+2026-05-21T12:28:57.091084Z	Using v2 root directory strategy
+2026-05-21T12:28:57.105341Z	Success: Finished cloning repository files
+2026-05-21T12:28:58.606494Z	Checking for configuration in a Wrangler configuration file (BETA)
+2026-05-21T12:28:58.606979Z	
+2026-05-21T12:28:59.696551Z	No Wrangler configuration file found. Continuing.
+2026-05-21T12:28:59.876815Z	Detected the following tools from environment: nodejs@20.20.0, pnpm@10.26.1
+2026-05-21T12:28:59.877956Z	Installing nodejs 20.20.0
+2026-05-21T12:29:01.145802Z	Trying to update node-build... ok
+2026-05-21T12:29:01.199953Z	To follow progress, use 'tail -f /tmp/node-build.20260521122901.799.log' or pass --verbose
+2026-05-21T12:29:01.241854Z	Downloading node-v20.20.0-linux-x64.tar.gz...
+2026-05-21T12:29:01.404027Z	-> https://nodejs.org/dist/v20.20.0/node-v20.20.0-linux-x64.tar.gz
+2026-05-21T12:29:03.690231Z	
+2026-05-21T12:29:03.690514Z	WARNING: node-v20.20.0-linux-x64 is in LTS Maintenance mode and nearing its end of life.
+2026-05-21T12:29:03.69085Z	It only receives *critical* security updates, *critical* bug fixes and documentation updates.
+2026-05-21T12:29:03.690935Z	
+2026-05-21T12:29:03.690985Z	Installing node-v20.20.0-linux-x64...
+2026-05-21T12:29:04.26392Z	Installed node-v20.20.0-linux-x64 to /opt/buildhome/.asdf/installs/nodejs/20.20.0
+2026-05-21T12:29:04.265246Z	
+2026-05-21T12:29:05.894036Z	npm warn EBADENGINE Unsupported engine {
+2026-05-21T12:29:05.895203Z	npm warn EBADENGINE   package: 'corepack@0.35.0',
+2026-05-21T12:29:05.895382Z	npm warn EBADENGINE   required: { node: '^22.22.2 || ^24.15.0 || >=26.0.0' },
+2026-05-21T12:29:05.895455Z	npm warn EBADENGINE   current: { node: 'v20.20.0', npm: '10.8.2' }
+2026-05-21T12:29:05.895509Z	npm warn EBADENGINE }
+2026-05-21T12:29:06.057877Z	
+2026-05-21T12:29:06.058323Z	changed 1 package in 905ms
+2026-05-21T12:29:06.071879Z	Reshimming asdf nodejs...
+2026-05-21T12:29:08.316995Z	Preparing pnpm@10.26.1 for immediate activation...
+2026-05-21T12:29:11.096508Z	Installing project dependencies: pnpm install
+2026-05-21T12:29:11.5573Z	Scope: all 2 workspace projects
+2026-05-21T12:29:11.609157Z	Lockfile is up to date, resolution step is skipped
+2026-05-21T12:29:11.645707Z	Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-05-21T12:29:11.680005Z	Packages: +168
+2026-05-21T12:29:11.680231Z	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-05-21T12:29:12.646685Z	Progress: resolved 168, reused 0, downloaded 17, added 3
+2026-05-21T12:29:13.646377Z	Progress: resolved 168, reused 0, downloaded 118, added 41
+2026-05-21T12:29:14.650533Z	Progress: resolved 168, reused 0, downloaded 162, added 56
+2026-05-21T12:29:15.650737Z	Progress: resolved 168, reused 0, downloaded 167, added 167
+2026-05-21T12:29:16.196372Z	Progress: resolved 168, reused 0, downloaded 168, added 168, done
+2026-05-21T12:29:16.285096Z	.../esbuild@0.27.3/node_modules/esbuild postinstall$ node install.js
+2026-05-21T12:29:16.424002Z	.../esbuild@0.27.3/node_modules/esbuild postinstall: Done
+2026-05-21T12:29:16.537961Z	
+2026-05-21T12:29:16.538232Z	devDependencies:
+2026-05-21T12:29:16.538277Z	+ prettier 3.8.1
+2026-05-21T12:29:16.538312Z	+ typescript 5.9.3
+2026-05-21T12:29:16.538342Z	
+2026-05-21T12:29:16.548852Z	. preinstall$ sh -c 'rm -f package-lock.json yarn.lock; case "$npm_config_user_agent" in pnpm/*) ;; *) echo "Use pnpm instead" >&2; exit 1 ;; esac'
+2026-05-21T12:29:16.562338Z	. preinstall: Done
+2026-05-21T12:29:16.585855Z	Done in 5.3s using pnpm v10.26.1
+2026-05-21T12:29:16.622277Z	Executing user command: pnpm --filter @workspace/lora-web run build
+2026-05-21T12:29:17.170593Z	
+2026-05-21T12:29:17.170859Z	> @workspace/lora-web@0.0.0 build /opt/buildhome/repo/artifacts/lora-web
+2026-05-21T12:29:17.170916Z	> tsc -b && vite build
+2026-05-21T12:29:17.170981Z	
+2026-05-21T12:29:20.046642Z	[36mvite v7.3.2 [32mbuilding client environment for production...[36m[39m
+2026-05-21T12:29:20.135845Z	transforming...
+2026-05-21T12:29:22.881003Z	[32m✓[39m 1698 modules transformed.
+2026-05-21T12:29:23.12736Z	rendering chunks...
+2026-05-21T12:29:23.138263Z	computing gzip size...
+2026-05-21T12:29:23.154009Z	[2mdist/[22m[32mindex.html                 [39m[1m[2m  0.97 kB[22m[1m[22m[2m │ gzip:  0.50 kB[22m
+2026-05-21T12:29:23.154321Z	[2mdist/[22m[2massets/[22m[35mindex-BWb01Bq9.css  [39m[1m[2m 35.92 kB[22m[1m[22m[2m │ gzip:  6.72 kB[22m
+2026-05-21T12:29:23.154397Z	[2mdist/[22m[2massets/[22m[36mindex-DJrwJb84.js   [39m[1m[2m283.41 kB[22m[1m[22m[2m │ gzip: 86.10 kB[22m
+2026-05-21T12:29:23.154481Z	[32m✓ built in 3.06s[39m
+2026-05-21T12:29:23.233521Z	Finished
+2026-05-21T12:29:23.902462Z	Checking for configuration in a Wrangler configuration file (BETA)
+2026-05-21T12:29:23.903028Z	
+2026-05-21T12:29:24.996352Z	No Wrangler configuration file found. Continuing.
+2026-05-21T12:29:24.997327Z	Note: No functions dir at /functions found. Skipping.
+2026-05-21T12:29:24.997548Z	Validating asset output directory
+2026-05-21T12:29:27.944058Z	Deploying your site to Cloudflare's global network...
+2026-05-21T12:29:28.661Z	Parsed 0 valid redirect rules.
+2026-05-21T12:29:28.661352Z	Found invalid redirect lines:
+2026-05-21T12:29:28.661407Z	  - #1: /* /index.html 200
+2026-05-21T12:29:28.661453Z	    Infinite loop detected in this rule and has been ignored. This will cause a redirect to strip `.html` or `/index` and end up triggering this rule again. Please fix or remove this rule to silence this warning.
+2026-05-21T12:29:30.412083Z	Uploading... (0/19)
+2026-05-21T12:29:31.723189Z	Uploading... (6/19)
+2026-05-21T12:29:31.743168Z	Uploading... (13/19)
+2026-05-21T12:29:31.80355Z	Uploading... (19/19)
+2026-05-21T12:29:31.803855Z	✨ Success! Uploaded 19 files (2.31 sec)
+2026-05-21T12:29:31.803968Z	
+2026-05-21T12:29:32.250401Z	✨ Upload complete!
+2026-05-21T12:29:36.876577Z	Success: Assets published!
+2026-05-21T12:29:38.547725Z	Success: Your site was deployed!
