@@ -75,7 +75,8 @@ export default function Home() {
     <div>
       <Helmet>
         <title>LORA Foreign Employment — Trusted Sri Lankan Overseas Recruitment Agency</title>
-        <meta name="description" content="LORA Foreign Employment (Pvt) Ltd is a licensed Sri Lankan overseas recruitment agency (SLBFE Licence No. 3777) connecting skilled Sri Lankans with jobs in the Middle East and Asia." />
+        <meta name="description" content="LORA Foreign Employment (Pvt) Ltd — licensed overseas recruitment agency in Hettipola, Kurunegala district (SLBFE Licence No. 3777). Connecting skilled Sri Lankans with jobs in the Middle East and Asia." />
+        <meta name="keywords" content="LORA, LORAA, LORA foreign employment, overseas agency, foreign employment agency, agency in Kurunegala, agency Hettipola, Hettipola, Bingriya, Sri Lanka overseas jobs, overseas recruitment Sri Lanka" />
         <meta property="og:title" content="LORA Foreign Employment — Trusted Sri Lankan Overseas Recruitment Agency" />
         <meta property="og:description" content="Licensed Sri Lankan overseas recruitment agency. Find verified overseas jobs in Qatar, UAE, Saudi Arabia, Malaysia and more." />
         <meta property="og:type" content="website" />

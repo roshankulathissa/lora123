@@ -7,8 +7,8 @@ export default function Contact() {
   return (
     <div className="pt-20">
       <Helmet>
-        <title>Contact Us — LORA Foreign Employment Sri Lanka</title>
-        <meta name="description" content="Contact LORA Foreign Employment in Hettipola, Sri Lanka. Call 070 40 40 407, WhatsApp us, or visit our office at 139/D First Floor, Kurunegala Road, Hettipola." />
+        <title>Contact Us — LORA Foreign Employment | Hettipola, Kurunegala</title>
+        <meta name="description" content="Contact LORA Foreign Employment — overseas recruitment agency in Hettipola, serving Bingriya and the Kurunegala district. Call 070 40 40 407 or WhatsApp us. Office: 139/D First Floor, Kurunegala Road, Hettipola." />
         <meta property="og:title" content="Contact LORA Foreign Employment — Hettipola, Sri Lanka" />
         <meta property="og:description" content="Reach our team by phone, WhatsApp, email or visit our office. We're ready to guide you through the overseas employment process." />
         <meta property="og:type" content="website" />
@@ -50,6 +50,9 @@ export default function Contact() {
                       Foreign employment agency in Hettipola<br />
                       139/D First Floor, Kurunegala Road,<br />
                       Hettipola
+                    </p>
+                    <p className="text-sm text-gray-500 mt-1">
+                      Serving Hettipola, Bingriya, and the Kurunegala district
                     </p>
                   </div>
                 </div>
