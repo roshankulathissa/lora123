@@ -162,10 +162,6 @@ importers:
         version: 5.9.3
 
   artifacts/lora-web:
-    dependencies:
-      react-helmet-async:
-        specifier: ^3.0.0
-        version: 3.0.0(react@19.1.0)
     devDependencies:
       '@hookform/resolvers':
         specifier: ^3.10.0
@@ -263,6 +259,9 @@ importers:
       react-dom:
         specifier: 'catalog:'
         version: 19.1.0(react@19.1.0)
+      react-helmet-async:
+        specifier: ^3.0.0
+        version: 3.0.0(react@19.1.0)
       react-hook-form:
         specifier: ^7.71.2
         version: 7.71.2(react@19.1.0)
