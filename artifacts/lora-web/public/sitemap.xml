@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- NOTE: The domain below is hardcoded. If you change the site domain,
+     update SITE_URL in src/lib/constants.ts AND replace every occurrence
+     of the old domain in this file and in robots.txt. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.loraa.lk/</loc>

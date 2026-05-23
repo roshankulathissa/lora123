@@ -1,6 +1,7 @@
 import { FileText, Banknote, CheckCircle, ChevronRight } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Reveal from "@/components/Reveal";
+import { SITE_URL } from "@/lib/constants";
 
 const cvTips = [
   {
@@ -84,10 +85,10 @@ export default function Resources() {
         <meta property="og:title" content="Resources & Guidance for Overseas Job Seekers — LORA Foreign Employment" />
         <meta property="og:description" content="Helpful tips on writing your CV, applying for bank loans, and preparing for overseas employment from LORA's expert team." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.loraa.lk/resources" />
-        <meta property="og:image" content="https://www.loraa.lk/home-hero.jpg" />
+        <meta property="og:url" content={`${SITE_URL}/resources`} />
+        <meta property="og:image" content={`${SITE_URL}/home-hero.jpg`} />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://www.loraa.lk/resources" />
+        <link rel="canonical" href={`${SITE_URL}/resources`} />
       </Helmet>
       <section
         className="py-24 text-white text-center"
