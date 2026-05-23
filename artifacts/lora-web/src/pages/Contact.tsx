@@ -47,6 +47,7 @@ export default function Contact() {
                     <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Address</p>
                     <p className="text-gray-800 font-medium leading-relaxed">
                       LORA Foreign Employment (Pvt) Ltd<br />
+                      Foreign employment agency in Hettipola<br />
                       139/D First Floor, Kurunegala Road,<br />
                       Hettipola
                     </p>
