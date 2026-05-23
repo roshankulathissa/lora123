@@ -1,5 +1,3 @@
-# NOTE: The domain in the Sitemap line below is hardcoded. If you change the
-# site domain, update SITE_URL in src/lib/constants.ts AND update this line.
 User-agent: *
 Allow: /
 
