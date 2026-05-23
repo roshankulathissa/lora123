@@ -1,4 +1,5 @@
 import { FileText, Banknote, CheckCircle, ChevronRight } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import Reveal from "@/components/Reveal";
 
 const cvTips = [
@@ -77,6 +78,17 @@ const loanPoints = [
 export default function Resources() {
   return (
     <div className="pt-20">
+      <Helmet>
+        <title>Resources & Guidance — LORA Foreign Employment Sri Lanka</title>
+        <meta name="description" content="CV writing tips, bank loan guidance for foreign job seekers, and pre-departure advice from LORA Foreign Employment — Sri Lanka's trusted overseas recruitment agency." />
+        <meta property="og:title" content="Resources & Guidance for Overseas Job Seekers — LORA Foreign Employment" />
+        <meta property="og:description" content="Helpful tips on writing your CV, applying for bank loans, and preparing for overseas employment from LORA's expert team." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lora123.pages.dev/resources" />
+        <meta property="og:image" content="https://lora123.pages.dev/home-hero.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://lora123.pages.dev/resources" />
+      </Helmet>
       <section
         className="py-24 text-white text-center"
         style={{ background: "var(--gradient-hero)" }}

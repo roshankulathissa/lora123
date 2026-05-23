@@ -1,4 +1,5 @@
 import { Users, Award, Globe, Heart } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import Reveal from "@/components/Reveal";
 
 const stats = [
@@ -50,6 +51,17 @@ import { Shield } from "lucide-react";
 export default function About() {
   return (
     <div className="pt-20">
+      <Helmet>
+        <title>About Us — LORA Foreign Employment (Pvt) Ltd</title>
+        <meta name="description" content="Learn about LORA Foreign Employment (Pvt) Ltd — a SLBFE-licensed Sri Lankan overseas recruitment agency led by experienced professionals committed to ethical recruitment." />
+        <meta property="og:title" content="About LORA Foreign Employment — Sri Lanka's Trusted Recruitment Agency" />
+        <meta property="og:description" content="SLBFE-licensed agency (Licence No. 3777) with a proven track record of placing Sri Lankan workers in the Middle East and Asia." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lora123.pages.dev/about" />
+        <meta property="og:image" content="https://lora123.pages.dev/home-hero.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://lora123.pages.dev/about" />
+      </Helmet>
       <section
         className="py-24 text-white"
         style={{ background: "var(--gradient-hero)" }}

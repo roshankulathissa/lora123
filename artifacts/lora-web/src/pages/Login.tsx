@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useLocation } from "wouter";
+import { Helmet } from "react-helmet-async";
 import { Lock, User, Eye, EyeOff, ShieldCheck } from "lucide-react";
 
 export default function Login() {
@@ -13,6 +14,10 @@ export default function Login() {
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4" style={{ background: "var(--gradient-hero)" }}>
+      <Helmet>
+        <title>Staff Portal — LORA Foreign Employment</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
       <div className="w-full max-w-md">
         <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
           <div className="px-8 py-10">

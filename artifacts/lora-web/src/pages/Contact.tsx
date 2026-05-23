@@ -1,9 +1,21 @@
 import { Phone, Mail, MapPin, MessageCircle, Facebook } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import Reveal from "@/components/Reveal";
 
 export default function Contact() {
   return (
     <div className="pt-20">
+      <Helmet>
+        <title>Contact Us — LORA Foreign Employment Sri Lanka</title>
+        <meta name="description" content="Contact LORA Foreign Employment in Hettipola, Sri Lanka. Call 070 40 40 407, WhatsApp us, or visit our office at 139/D First Floor, Kurunegala Road, Hettipola." />
+        <meta property="og:title" content="Contact LORA Foreign Employment — Hettipola, Sri Lanka" />
+        <meta property="og:description" content="Reach our team by phone, WhatsApp, email or visit our office. We're ready to guide you through the overseas employment process." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lora123.pages.dev/contact" />
+        <meta property="og:image" content="https://lora123.pages.dev/home-hero.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://lora123.pages.dev/contact" />
+      </Helmet>
       <section
         className="py-24 text-white text-center"
         style={{ background: "var(--gradient-hero)" }}

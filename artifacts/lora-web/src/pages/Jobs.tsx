@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 import { MapPin, DollarSign, Users, ArrowRight, Search, Briefcase } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
@@ -43,6 +44,17 @@ export default function Jobs() {
 
   return (
     <div className="pt-20">
+      <Helmet>
+        <title>Overseas Job Openings — LORA Foreign Employment Sri Lanka</title>
+        <meta name="description" content="Browse verified overseas job vacancies in Qatar, UAE, Saudi Arabia, Kuwait, Malaysia and Oman. Construction, nursing, hospitality, skilled trades and more. Apply via WhatsApp." />
+        <meta property="og:title" content="Overseas Job Openings — LORA Foreign Employment Sri Lanka" />
+        <meta property="og:description" content="Verified overseas jobs across the Middle East and Asia for Sri Lankan workers. Apply easily via WhatsApp." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lora123.pages.dev/jobs" />
+        <meta property="og:image" content="https://lora123.pages.dev/home-hero.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://lora123.pages.dev/jobs" />
+      </Helmet>
       <section className="relative py-24 text-white text-center overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/jobs-hero.png')" }} />
         <div className="absolute inset-0" style={{ background: "oklch(15% 0.04 240 / 0.75)" }} />

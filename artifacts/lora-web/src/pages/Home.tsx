@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 import { ArrowRight, Globe, Shield, Users, Award, Briefcase, CheckCircle, Link2, MapPin as MapPinIcon, ClipboardList, Heart } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
@@ -44,9 +45,45 @@ const services = [
 ];
 
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "LORA Foreign Employment (Pvt) Ltd",
+  "description": "Sri Lanka's trusted overseas recruitment agency licensed by SLBFE. Connecting skilled Sri Lankans with legitimate international career opportunities in the Middle East and Asia.",
+  "url": "https://lora123.pages.dev",
+  "logo": "https://lora123.pages.dev/lora-logo.png",
+  "image": "https://lora123.pages.dev/home-hero.jpg",
+  "telephone": ["+94704040407", "+94702340823", "+94711567174", "+94372290141"],
+  "email": "loraemp@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "139/D First Floor, Kurunegala Road",
+    "addressLocality": "Hettipola",
+    "addressCountry": "LK"
+  },
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "SLBFE Labour Licence",
+    "value": "3777"
+  },
+  "sameAs": ["https://www.facebook.com/share/1WYoeBQ2ci/"]
+};
+
 export default function Home() {
   return (
     <div>
+      <Helmet>
+        <title>LORA Foreign Employment — Trusted Sri Lankan Overseas Recruitment Agency</title>
+        <meta name="description" content="LORA Foreign Employment (Pvt) Ltd is a licensed Sri Lankan overseas recruitment agency (SLBFE Licence No. 3777) connecting skilled Sri Lankans with jobs in the Middle East and Asia." />
+        <meta property="og:title" content="LORA Foreign Employment — Trusted Sri Lankan Overseas Recruitment Agency" />
+        <meta property="og:description" content="Licensed Sri Lankan overseas recruitment agency. Find verified overseas jobs in Qatar, UAE, Saudi Arabia, Malaysia and more." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lora123.pages.dev/" />
+        <meta property="og:image" content="https://lora123.pages.dev/home-hero.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://lora123.pages.dev/" />
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      </Helmet>
       <section
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
       >

@@ -1,4 +1,5 @@
 import { MessageCircle, ArrowRight, CheckCircle } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import Reveal from "@/components/Reveal";
 
 const WHATSAPP_URL = "https://wa.me/94704040407";
@@ -39,6 +40,17 @@ const documents = [
 export default function Apply() {
   return (
     <div className="pt-20">
+      <Helmet>
+        <title>Apply for Overseas Jobs via WhatsApp — LORA Foreign Employment</title>
+        <meta name="description" content="Apply for overseas jobs easily via WhatsApp. Send your CV and details to LORA Foreign Employment and our team will match you with the right opportunity." />
+        <meta property="og:title" content="Apply via WhatsApp — LORA Foreign Employment Sri Lanka" />
+        <meta property="og:description" content="The fastest way to apply for overseas work. Chat with our team on WhatsApp and start your journey abroad." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lora123.pages.dev/apply" />
+        <meta property="og:image" content="https://lora123.pages.dev/home-hero.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://lora123.pages.dev/apply" />
+      </Helmet>
       <section
         className="py-24 text-white text-center"
         style={{ background: "var(--gradient-hero)" }}
