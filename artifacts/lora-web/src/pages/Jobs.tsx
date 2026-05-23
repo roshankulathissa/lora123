@@ -50,10 +50,10 @@ export default function Jobs() {
         <meta property="og:title" content="Overseas Job Openings — LORA Foreign Employment Sri Lanka" />
         <meta property="og:description" content="Verified overseas jobs across the Middle East and Asia for Sri Lankan workers. Apply easily via WhatsApp." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lora123.pages.dev/jobs" />
-        <meta property="og:image" content="https://lora123.pages.dev/home-hero.jpg" />
+        <meta property="og:url" content="https://www.loraa.lk/jobs" />
+        <meta property="og:image" content="https://www.loraa.lk/home-hero.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://lora123.pages.dev/jobs" />
+        <link rel="canonical" href="https://www.loraa.lk/jobs" />
       </Helmet>
       <section className="relative py-24 text-white text-center overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/jobs-hero.png')" }} />

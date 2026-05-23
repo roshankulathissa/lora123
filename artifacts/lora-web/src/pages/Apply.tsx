@@ -46,10 +46,10 @@ export default function Apply() {
         <meta property="og:title" content="Apply via WhatsApp — LORA Foreign Employment Sri Lanka" />
         <meta property="og:description" content="The fastest way to apply for overseas work. Chat with our team on WhatsApp and start your journey abroad." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lora123.pages.dev/apply" />
-        <meta property="og:image" content="https://lora123.pages.dev/home-hero.jpg" />
+        <meta property="og:url" content="https://www.loraa.lk/apply" />
+        <meta property="og:image" content="https://www.loraa.lk/home-hero.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://lora123.pages.dev/apply" />
+        <link rel="canonical" href="https://www.loraa.lk/apply" />
       </Helmet>
       <section
         className="py-24 text-white text-center"

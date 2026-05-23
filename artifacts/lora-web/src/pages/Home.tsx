@@ -50,9 +50,9 @@ const jsonLd = {
   "@type": "LocalBusiness",
   "name": "LORA Foreign Employment (Pvt) Ltd",
   "description": "Sri Lanka's trusted overseas recruitment agency licensed by SLBFE. Connecting skilled Sri Lankans with legitimate international career opportunities in the Middle East and Asia.",
-  "url": "https://lora123.pages.dev",
-  "logo": "https://lora123.pages.dev/lora-logo.png",
-  "image": "https://lora123.pages.dev/home-hero.jpg",
+  "url": "https://www.loraa.lk",
+  "logo": "https://www.loraa.lk/lora-logo.png",
+  "image": "https://www.loraa.lk/home-hero.jpg",
   "telephone": ["+94704040407", "+94702340823", "+94711567174", "+94372290141"],
   "email": "loraemp@gmail.com",
   "address": {
@@ -78,10 +78,10 @@ export default function Home() {
         <meta property="og:title" content="LORA Foreign Employment — Trusted Sri Lankan Overseas Recruitment Agency" />
         <meta property="og:description" content="Licensed Sri Lankan overseas recruitment agency. Find verified overseas jobs in Qatar, UAE, Saudi Arabia, Malaysia and more." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lora123.pages.dev/" />
-        <meta property="og:image" content="https://lora123.pages.dev/home-hero.jpg" />
+        <meta property="og:url" content="https://www.loraa.lk/" />
+        <meta property="og:image" content="https://www.loraa.lk/home-hero.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://lora123.pages.dev/" />
+        <link rel="canonical" href="https://www.loraa.lk/" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
       <section

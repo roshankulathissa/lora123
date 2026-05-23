@@ -57,10 +57,10 @@ export default function About() {
         <meta property="og:title" content="About LORA Foreign Employment — Sri Lanka's Trusted Recruitment Agency" />
         <meta property="og:description" content="SLBFE-licensed agency (Licence No. 3777) with a proven track record of placing Sri Lankan workers in the Middle East and Asia." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lora123.pages.dev/about" />
-        <meta property="og:image" content="https://lora123.pages.dev/home-hero.jpg" />
+        <meta property="og:url" content="https://www.loraa.lk/about" />
+        <meta property="og:image" content="https://www.loraa.lk/home-hero.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://lora123.pages.dev/about" />
+        <link rel="canonical" href="https://www.loraa.lk/about" />
       </Helmet>
       <section
         className="py-24 text-white"

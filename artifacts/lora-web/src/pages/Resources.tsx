@@ -84,10 +84,10 @@ export default function Resources() {
         <meta property="og:title" content="Resources & Guidance for Overseas Job Seekers — LORA Foreign Employment" />
         <meta property="og:description" content="Helpful tips on writing your CV, applying for bank loans, and preparing for overseas employment from LORA's expert team." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lora123.pages.dev/resources" />
-        <meta property="og:image" content="https://lora123.pages.dev/home-hero.jpg" />
+        <meta property="og:url" content="https://www.loraa.lk/resources" />
+        <meta property="og:image" content="https://www.loraa.lk/home-hero.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://lora123.pages.dev/resources" />
+        <link rel="canonical" href="https://www.loraa.lk/resources" />
       </Helmet>
       <section
         className="py-24 text-white text-center"
