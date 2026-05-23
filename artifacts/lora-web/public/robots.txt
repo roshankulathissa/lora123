@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lora123.pages.dev/sitemap.xml
+Sitemap: https://www.loraa.lk/sitemap.xml
