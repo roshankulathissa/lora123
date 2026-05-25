@@ -8,6 +8,9 @@ import Contact from "./pages/Contact";
 import Apply from "./pages/Apply";
 import Resources from "./pages/Resources";
 import Login from "./pages/Login";
+import { ROUTES } from "./lib/routes";
+
+const [home, jobs, about, contact, apply, resources, login] = ROUTES;
 
 export default function App() {
   return (
@@ -15,13 +18,13 @@ export default function App() {
       <Header />
       <main className="flex-1">
         <Switch>
-          <Route path="/" component={Home} />
-          <Route path="/jobs" component={Jobs} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/apply" component={Apply} />
-          <Route path="/resources" component={Resources} />
-          <Route path="/login" component={Login} />
+          <Route path={home.path} component={Home} />
+          <Route path={jobs.path} component={Jobs} />
+          <Route path={about.path} component={About} />
+          <Route path={contact.path} component={Contact} />
+          <Route path={apply.path} component={Apply} />
+          <Route path={resources.path} component={Resources} />
+          <Route path={login.path} component={Login} />
         </Switch>
       </main>
       <Footer />
