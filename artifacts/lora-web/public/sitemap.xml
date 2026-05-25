@@ -16,6 +16,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.loraa.lk/resources</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.loraa.lk/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -24,10 +29,5 @@
     <loc>https://www.loraa.lk/apply</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.loraa.lk/resources</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
 </urlset>
