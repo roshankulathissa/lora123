@@ -1,15 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
+import { NAV_ROUTES } from "@/lib/routes";
 
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/jobs", label: "Overseas Jobs" },
-  { href: "/about", label: "About Us" },
-  { href: "/resources", label: "Resources" },
-  { href: "/contact", label: "Contact" },
-  { href: "/apply", label: "Apply Now" },
-];
+const navLinks = NAV_ROUTES.map((r) => ({ href: r.path, label: r.label }));
 
 export default function Header() {
   const [location] = useLocation();

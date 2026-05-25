@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Phone, Mail, MapPin, MessageCircle, Facebook } from "lucide-react";
+import { NAV_ROUTES } from "@/lib/routes";
 
 export default function Footer() {
   return (
@@ -40,14 +41,7 @@ export default function Footer() {
               Quick Links
             </h3>
             <ul className="space-y-2">
-              {[
-                { href: "/", label: "Home" },
-                { href: "/jobs", label: "Job Listings" },
-                { href: "/about", label: "About Us" },
-                { href: "/resources", label: "Resources" },
-                { href: "/contact", label: "Contact" },
-                { href: "/apply", label: "Apply Now" },
-              ].map(({ href, label }) => (
+              {NAV_ROUTES.map(({ path: href, label }) => (
                 <li key={href}>
                   <Link
                     href={href}
